@@ -2276,6 +2276,10 @@ do
         if pointer and tostring(pointer) ~= "" and tostring(pointer) ~= " " and not library.pointers[tostring(pointer)] then
             library.pointers[tostring(pointer)] = button
         end
+		
+	function button:ChangeText(text)
+		button_title.Text = text;
+	end
         --
         section.currentAxis = section.currentAxis + 20 + 4
         section:Update()
