@@ -2280,6 +2280,9 @@ do
 	function button:ChangeText(text)
 		button_title.Text = text;
 	end
+	function button:ChangeTextColor(text)
+		button_title.Color = text;
+	end
         --
         section.currentAxis = section.currentAxis + 20 + 4
         section:Update()
