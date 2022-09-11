@@ -1351,6 +1351,10 @@ do
         if pointer and tostring(pointer) ~= "" and tostring(pointer) ~= " " and not library.pointers[tostring(pointer)] then
             library.pointers[tostring(pointer)] = label
         end
+		
+	function label:ChangeText(text)
+		label_title.Text = text		
+	end
         --
         section.currentAxis = section.currentAxis + label_title.TextBounds.Y + 4
         section:Update()
